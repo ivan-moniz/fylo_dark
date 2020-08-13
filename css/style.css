@@ -1,0 +1,413 @@
+@media screen and (max-width: 1440px) {
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --color_intro: hsl(217, 28%, 15%);
+    --main_color: hsl(218, 28%, 13%);
+    --footer_color: hsl(216, 53%, 9%);
+    --test_color: hsl(219, 30%, 18%);
+    --accent: linear-gradient(to left, hsl(198, 60%, 50%), hsl(176, 68%, 64%));
+    --neutral: hsl(0, 0%, 100%);
+    --accent_word: hsl(198, 60%, 50%);
+  }
+
+  body {
+    background: var(--color_intro);
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    font-size: 14px;
+
+  }
+  /* Styling all elements */
+  ul { list-style: none; }
+
+  button {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    background: var(--accent);
+    color: var(--neutral);
+    margin-top: .7rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  main {
+    background: var(--main_color);
+    padding-top: 2rem;
+  }
+
+  footer {
+    background: var(--footer_color);
+    position: relative;
+    padding: 8rem 0;
+    z-index: 1;
+  }
+
+  input {
+    width: 24rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    padding: 1rem;
+    margin: 0 1rem;
+  }
+  span {
+    font-weight: 700;
+    padding-bottom: 10rem;
+    font-size: .8rem;
+  }
+  i {
+    color: var(--neutral);
+    padding: 0 .3rem;
+  }
+  /* Styling all classes  */
+  .showcase {
+    background: var(--color_intro);
+    padding: 4rem;
+  }
+
+  .navigation > li {
+    color: var(--neutral);
+    display: inline-block;
+    padding: 0 2rem;
+    cursor: pointer;
+  }
+
+  .topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo { cursor: pointer; }
+  .text-container {
+    color: var(--neutral);
+    padding: 2.6rem 22rem;
+    line-height: 1.4;
+    position: relative;
+    z-index: 3;
+  }
+  .text-container > p { padding: 1.6rem 3rem; }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 6rem;
+  }
+
+  .grid-box {
+    position: relative;
+    z-index: 2;
+    padding: 4rem;
+   }
+  .grid-box, h3 { padding: .6rem 3.2rem; }
+  .grid-box, p {
+    padding: .4rem 3.2rem;
+    color: var(--neutral);
+   }
+
+   .wave-image img {
+     width: 100%;
+     top: 100%;
+     z-index: 1;
+     position: absolute;
+     transform: translate(-5%, 50% );
+   }
+
+   .grid-container2 {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 1.1rem;
+     padding: 4rem;
+   }
+   .text-container2 { padding-top: 8rem; }
+   .heading {
+     font-weight: 700;
+     font-family: 'Raleway' ,sans-serif;
+     font-size: 1.8rem;
+     word-wrap: break-word;
+     padding-right: 15rem;
+   }
+
+   .link a { color: var(--accent_word); }
+
+   .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding: 7rem 5rem;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 6rem;
+   }
+
+  .card-box {
+    background: var(--test_color);
+    padding-top: 2rem;
+    box-shadow:  10px 10px 30px var(--footer_color);
+    padding-bottom: 2rem;
+   }
+
+  .sm-text > img {
+    border-radius: 50%;
+    width: 10%;
+    margin:1rem 0rem 0rem 3rem;
+  }
+
+  .sm-text > p {
+    margin: -3rem 0rem 0 2.5rem;
+    font-size: .6rem;
+  }
+
+  .quotes {
+    position: absolute;
+    z-index: 1;
+    transform: translate(100%, 85%);
+    padding: .8rem .4rem;
+  }
+
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem;
+    background: var(--color_intro);
+    box-shadow: 10px 10px 30px var(--footer_color);
+    position: absolute;
+    z-index: 3;
+    width: 50rem;
+    left: 20%;
+    transform: translateY(-50%);
+  }
+  .text {
+    color: var(--neutral);
+  }
+
+  .form > h2 { color: var(--neutral); }
+  .footer_image {
+    padding-top: 4rem;
+    padding-left: 4rem;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+
+    align-content: center;
+    padding-top: 1rem;
+
+  }
+  .box { color: #fff; }
+  .box_p {
+    grid-column: 1/3;
+    white-space: normal;
+  }
+  .box_p > p > img { padding-right: .7rem; }
+  .box > ul > li > img {
+    padding-top: 1rem;
+    padding-right: 1rem;
+  }
+
+  .box > ul > li, i {
+    cursor: pointer;
+    padding-top: .5rem;
+  }
+
+  .box > i { padding-top: .5rem; }
+  .box-1 > i { padding-top: .8rem; }
+  .box-1 > i > span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: .8rem;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  button {
+    width: 15rem;
+    height: 3rem;
+  }
+
+  span {
+    padding-bottom: 1rem;
+  }
+  input {
+    width: 15rem;
+    height: 3rem;
+  }
+  
+  .navigation > li {
+    color: var(--neutral);
+    display: inline-block;
+    padding: 0 .2rem;
+    cursor: pointer;
+  }
+  .navigation {
+    margin-left: 1.8rem;
+  }
+
+  .logo > img {
+    margin-left: -2.9rem;
+    width: 100px;
+  }
+
+  .img-container > img {
+    width: 300px;
+  }
+
+  .text-container {
+    color: var(--neutral);
+    padding: 2.6rem 0;
+    line-height: 1.4;
+    position: relative;
+    z-index: 3;
+  }
+  .text-container > p {
+    padding: 1.6rem 0;
+    text-align: center;
+    font-size: 1rem;
+   }
+
+   .grid-container {
+     grid-template-columns: 1fr;
+     padding: 0;
+   }
+   .grid-box {
+     position: relative;
+     z-index: 2;
+     padding: 0;
+    }
+   .grid-box, h3 { padding: .6rem 0rem; }
+   .grid-box, p {
+     padding: .4rem 1rem;
+     line-height: 1.2;
+     color: var(--neutral);
+    }
+
+   .grid-container2 {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      padding: 0;
+      padding-top: 5rem;
+    }
+
+    .img-container2 > img {
+      width: 300px
+    }
+    .text-container2 {
+      text-align:left;
+      padding: 0 1rem;
+    }
+    .heading {
+      font-weight: 700;
+      font-family: 'Raleway' ,sans-serif;
+      font-size: 1.2rem;
+      word-wrap: break-word;
+      padding-right: 0rem;
+      text-align: center;
+    }
+
+    .card-container {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      text-align: center;
+    }
+    .card-box {
+      width: 300px;
+      border-radius: .5rem;
+    }
+    .sm-text > img {
+      margin-right: 30rem;
+      transform: translateX(-60%);
+    }
+    .sm-text > p {
+      margin: -2.4rem 5rem 0 3.5rem;
+      font-size: .6rem;
+      text-align: left;
+    }
+    .quotes > img {
+      width: 20px;
+    }
+
+    .quotes {
+      transform: translate(100%, 100%);
+      padding: 1.6rem .4rem;
+    }
+    .form {
+      width: 20rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      align-content: center;
+      left: 8%;
+      margin-top: 2rem;
+      border-radius: .5rem;
+    }
+    .text {
+      padding: .5rem 0rem;
+    }
+
+    .wave-image > img {
+      display: none;
+    }
+
+    .footer_image {
+      padding-top: 10rem;
+      padding-left: 2rem;
+    }
+
+    .footer-grid {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: left;
+      padding-right: 2rem;
+    }
+
+    .box_p { grid-column: 1; }
+
+    .box { padding: 0 1.5rem; }
+
+    .box_p > p { text-align: center;}
+}
